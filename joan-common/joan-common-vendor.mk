@@ -44,10 +44,16 @@ PRODUCT_COPY_FILES += \
     vendor/lge/joan-common/proprietary/vendor/framework/qcrilhook.jar:$(TARGET_COPY_OUT_VENDOR)/framework/qcrilhook.jar \
     vendor/lge/joan-common/proprietary/vendor/framework/vendor.lge.hardware.sysnode-V1.0-java.jar:$(TARGET_COPY_OUT_VENDOR)/framework/vendor.lge.hardware.sysnode-V1.0-java.jar \
     vendor/lge/joan-common/proprietary/vendor/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar:$(TARGET_COPY_OUT_VENDOR)/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar \
+    vendor/lge/sm8150-common/proprietary/product/framework/uimgbalibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/uimgbalibrary.jar \
+    vendor/lge/sm8150-common/proprietary/product/framework/uimgbamanagerlibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/uimgbamanagerlibrary.jar \
+    vendor/lge/sm8150-common/proprietary/product/framework/vendor.lge.hardware.soi-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.lge.hardware.soi-V1.0-java.jar \
+    vendor/lge/sm8150-common/proprietary/product/framework/vendor.lge.hardware.vss_ims-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.lge.hardware.vss_ims-V1.0-java.jar \
     vendor/lge/joan-common/proprietary/lib/com.qualcomm.qti.ant@1.0.so:system/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/lge/joan-common/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/lge/joan-common/proprietary/lib/fm_helium.so:system/lib/fm_helium.so \
     vendor/lge/joan-common/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
+    vendor/lge/sm8150-common/proprietary/lib/libLgeProductFeatures2.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libLgeProductFeatures2.so \
+    vendor/lge/sm8150-common/proprietary/lib/libLgeProductProperties.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libLgeProductProperties.so \
     vendor/lge/joan-common/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
     vendor/lge/joan-common/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
     vendor/lge/joan-common/proprietary/lib/libfm-hci.so:system/lib/libfm-hci.so \
@@ -57,6 +63,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/joan-common/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
     vendor/lge/joan-common/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
     vendor/lge/joan-common/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
+    vendor/lge/sm8150-common/proprietary/lib/libpatchcodeid.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libpatchcodeid.so \
+    vendor/lge/sm8150-common/proprietary/lib/libpcas.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libpcas.so \
     vendor/lge/joan-common/proprietary/vendor/lib/libpcas.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpcas.so \
     vendor/lge/joan-common/proprietary/lib/libqti-at.so:system/lib/libqti-at.so \
     vendor/lge/joan-common/proprietary/lib/libqti-perfd-client_system.so:system/lib/libqti-perfd-client_system.so \
@@ -97,10 +105,21 @@ PRODUCT_COPY_FILES += \
     vendor/lge/joan-common/proprietary/vendor/lib/vendor.lge.hardware.sysnode@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.lge.hardware.sysnode@1.0.so \
     vendor/lge/joan-common/proprietary/lib/vendor.qti.hardware.iop@1.0.so:system/lib/vendor.qti.hardware.iop@1.0.so \
     vendor/lge/joan-common/proprietary/lib/vendor.qti.hardware.perf@1.0.so:system/lib/vendor.qti.hardware.perf@1.0.so \
+    vendor/lge/sm8150-common/proprietary/product/lib/lib-imscamera.so:$(TARGET_COPY_OUT_PRODUCT)/lib/lib-imscamera.so \
+    vendor/lge/sm8150-common/proprietary/product/lib/lib-imsvideocodec.so:$(TARGET_COPY_OUT_PRODUCT)/lib/lib-imsvideocodec.so \
+    vendor/lge/sm8150-common/proprietary/product/lib/lib-imsvt.so:$(TARGET_COPY_OUT_PRODUCT)/lib/lib-imsvt.so \
+    vendor/lge/sm8150-common/proprietary/product/lib/lib-imsvtextutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib/lib-imsvtextutils.so \
+    vendor/lge/sm8150-common/proprietary/product/lib/lib-imsvtutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib/lib-imsvtutils.so \
+    vendor/lge/sm8150-common/proprietary/product/lib/libimsmedia_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libimsmedia_jni.so \
+    vendor/lge/sm8150-common/proprietary/product/lib/vendor.lge.hardware.property@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.lge.hardware.property@1.0.so \
+    vendor/lge/sm8150-common/proprietary/product/lib/vendor.lge.hardware.property@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.lge.hardware.property@2.0.so \
+    vendor/lge/sm8150-common/proprietary/product/lib/vendor.lge.hardware.soi@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.lge.hardware.soi@1.0.so \
     vendor/lge/joan-common/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/lge/joan-common/proprietary/lib64/fm_helium.so:system/lib64/fm_helium.so \
     vendor/lge/joan-common/proprietary/vendor/lib64/hw/fingerprint.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.msm8998.so \
     vendor/lge/joan-common/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
+    vendor/lge/sm8150-common/proprietary/lib64/libLgeProductFeatures2.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libLgeProductFeatures2.so \
+    vendor/lge/sm8150-common/proprietary/lib64/libLgeProductProperties.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libLgeProductProperties.so \
     vendor/lge/joan-common/proprietary/lib64/libOmxMux.so:system/lib64/libOmxMux.so \
     vendor/lge/joan-common/proprietary/vendor/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaptXHD_encoder.so \
     vendor/lge/joan-common/proprietary/vendor/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaptX_encoder.so \
@@ -112,6 +131,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/joan-common/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
     vendor/lge/joan-common/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
     vendor/lge/joan-common/proprietary/lib64/libmmrtpencoder.so:system/lib64/libmmrtpencoder.so \
+    vendor/lge/sm8150-common/proprietary/lib64/libpatchcodeid.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libpatchcodeid.so \
+    vendor/lge/sm8150-common/proprietary/lib64/libpcas.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libpcas.so \
     vendor/lge/joan-common/proprietary/vendor/lib64/libpcas.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpcas.so \
     vendor/lge/joan-common/proprietary/lib64/libqti-at.so:system/lib64/libqti-at.so \
     vendor/lge/joan-common/proprietary/lib64/libqti-perfd-client_system.so:system/lib64/libqti-perfd-client_system.so \
@@ -146,6 +167,19 @@ PRODUCT_COPY_FILES += \
     vendor/lge/joan-common/proprietary/vendor/lib64/vendor.lge.hardware.sysnode@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.lge.hardware.sysnode@1.0.so \
     vendor/lge/joan-common/proprietary/lib64/vendor.qti.hardware.iop@1.0.so:system/lib64/vendor.qti.hardware.iop@1.0.so \
     vendor/lge/joan-common/proprietary/lib64/vendor.qti.hardware.perf@1.0.so:system/lib64/vendor.qti.hardware.perf@1.0.so \
+    vendor/lge/sm8150-common/proprietary/product/lib64/lib-imscamera.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imscamera.so \
+    vendor/lge/sm8150-common/proprietary/product/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvideocodec.so \
+    vendor/lge/sm8150-common/proprietary/product/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvt.so \
+    vendor/lge/sm8150-common/proprietary/product/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvtextutils.so \
+    vendor/lge/sm8150-common/proprietary/product/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvtutils.so \
+    vendor/lge/sm8150-common/proprietary/product/lib64/libims.lge.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libims.lge.so \
+    vendor/lge/sm8150-common/proprietary/product/lib64/libimscamerajni.lge.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimscamerajni.lge.so \
+    vendor/lge/sm8150-common/proprietary/product/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimsmedia_jni.so \
+    vendor/lge/sm8150-common/proprietary/product/lib64/libimsmmpf.lge.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimsmmpf.lge.so \
+    vendor/lge/sm8150-common/proprietary/product/lib64/libimswms.lge.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimswms.lge.so \
+    vendor/lge/sm8150-common/proprietary/product/lib64/vendor.lge.hardware.property@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.lge.hardware.property@1.0.so \
+    vendor/lge/sm8150-common/proprietary/product/lib64/vendor.lge.hardware.property@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.lge.hardware.property@2.0.so \
+    vendor/lge/sm8150-common/proprietary/product/lib64/vendor.lge.hardware.soi@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.lge.hardware.soi@1.0.so \
     vendor/lge/joan-common/proprietary/vendor/firmware/bu24235_dl_program_Joan_LGITAct_ICG1020S_rev0_S_data1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bu24235_dl_program_Joan_LGITAct_ICG1020S_rev0_S_data1.bin \
     vendor/lge/joan-common/proprietary/vendor/firmware/bu24235_dl_program_Joan_LGITAct_ICG1020S_rev0_S_data2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bu24235_dl_program_Joan_LGITAct_ICG1020S_rev0_S_data2.bin \
     vendor/lge/joan-common/proprietary/vendor/firmware/bu24235_dl_program_Joan_LGITAct_ICG1020S_rev3_S_data1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bu24235_dl_program_Joan_LGITAct_ICG1020S_rev3_S_data1.bin \
@@ -169,6 +203,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/joan-common/proprietary/vendor/bin/hw/vendor.qti.gnss@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.gnss@1.0-service \
     vendor/lge/joan-common/proprietary/vendor/bin/hw/vendor.qti.hardware.iop@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.iop@1.0-service \
     vendor/lge/joan-common/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@1.0-service \
+    vendor/lge/sm8150-common/proprietary/vendor/bin/hw/vendor.lge.hardware.property@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.lge.hardware.property@2.0-service \
+    vendor/lge/sm8150-common/proprietary/vendor/bin/hw/vendor.lge.hardware.soi@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.lge.hardware.soi@1.0-service \
     vendor/lge/joan-common/proprietary/vendor/bin/ipacm-diag:$(TARGET_COPY_OUT_VENDOR)/bin/ipacm-diag \
     vendor/lge/joan-common/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
     vendor/lge/joan-common/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
@@ -190,6 +226,9 @@ PRODUCT_COPY_FILES += \
     vendor/lge/joan-common/proprietary/vendor/bin/wcnss_filter:$(TARGET_COPY_OUT_VENDOR)/bin/wcnss_filter \
     vendor/lge/joan-common/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
     vendor/lge/joan-common/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
+    vendor/lge/sm8150-common/proprietary/product/bin/imsipsecclient:$(TARGET_COPY_OUT_PRODUCT)/bin/imsipsecclient \
+    vendor/lge/sm8150-common/proprietary/product/bin/imsipsecstarter:$(TARGET_COPY_OUT_PRODUCT)/bin/imsipsecstarter \
+    vendor/lge/sm8150-common/proprietary/product/bin/ipsecd:$(TARGET_COPY_OUT_PRODUCT)/bin/ipsecd \
     vendor/lge/joan-common/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/lge/joan-common/proprietary/vendor/etc/acdbdata/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Codec_cal.acdb \
     vendor/lge/joan-common/proprietary/vendor/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/General_cal.acdb \
@@ -228,6 +267,13 @@ PRODUCT_COPY_FILES += \
     vendor/lge/joan-common/proprietary/vendor/etc/init/vendor.qti.gnss@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.gnss@1.0-service.rc \
     vendor/lge/joan-common/proprietary/vendor/etc/init/vendor.qti.hardware.iop@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.iop@1.0-service.rc \
     vendor/lge/joan-common/proprietary/vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@1.0-service.rc \
+    vendor/lge/sm8150-common/proprietary/vendor/etc/init/init.lge.ims.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.lge.ims.rc \
+    vendor/lge/sm8150-common/proprietary/vendor/etc/init/init.lge.iwlan.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.lge.iwlan.rc \
+    vendor/lge/sm8150-common/proprietary/vendor/etc/init/vendor.lge.hardware.property@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.property@2.0-service.rc \
+    vendor/lge/sm8150-common/proprietary/vendor/etc/init/vendor.lge.hardware.soi@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.soi@1.0-service.rc \
+    vendor/lge/sm8150-common/proprietary/product/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
+    vendor/lge/sm8150-common/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
+    vendor/lge/sm8150-common/proprietary/product/etc/permissions/com.lge.ims.media.evs.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.lge.ims.media.evs.xml \
     vendor/lge/joan-common/proprietary/vendor/etc/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf \
     vendor/lge/joan-common/proprietary/vendor/etc/perf/perf-profile1.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile1.conf \
     vendor/lge/joan-common/proprietary/vendor/etc/perf/perf-profile2.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile2.conf \
@@ -240,6 +286,9 @@ PRODUCT_COPY_FILES += \
     vendor/lge/joan-common/proprietary/vendor/etc/qdcm_calib_data_SW43402_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_SW43402_cmd_mode_dsc_dsi_panel.xml \
     vendor/lge/joan-common/proprietary/vendor/etc/scve/facereco/gModel.dat:$(TARGET_COPY_OUT_VENDOR)/etc/scve/facereco/gModel.dat \
     vendor/lge/joan-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
+    vendor/lge/sm8150-common/proprietary/product/etc/permissions/lgims_permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/lgims_permissions.xml \
+    vendor/lge/sm8150-common/proprietary/product/etc/permissions/privapp-permissions-lgims.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-lgims.xml \
+    vendor/lge/sm8150-common/proprietary/product/etc/sysconfig/lgims_whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/lgims_whitelist.xml \
     vendor/lge/joan-common/proprietary/vendor/lib/com.qualcomm.qti.ant@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.ant@1.0_vendor.so \
     vendor/lge/joan-common/proprietary/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so \
     vendor/lge/joan-common/proprietary/vendor/lib/com.qualcomm.qti.dpm.api@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.dpm.api@1.0_vendor.so \
@@ -266,6 +315,19 @@ PRODUCT_COPY_FILES += \
     vendor/lge/joan-common/proprietary/vendor/lib/hw/vendor.qti.hardware.iop@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.iop@1.0-impl.so \
     vendor/lge/joan-common/proprietary/vendor/lib/hw/vr.joan.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vr.joan.so \
     vendor/lge/joan-common/proprietary/vendor/lib/hw/vulkan.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.msm8998.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib/hw/vendor.lge.hardware.property@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.lge.hardware.property@2.0-impl.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib/hw/vendor.lge.hardware.soi@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.lge.hardware.soi@1.0-impl.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib/lib-imscmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imscmservice.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsdpl.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib/lib-imsqimf.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsqimf.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib/lib-imsrcs-v2.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsrcs-v2.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib/lib-imsrcsbaseimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsrcsbaseimpl.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib/lib-imsvtcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsvtcore.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib/lib-imsxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsxml.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib/liblgesoi-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblgesoi-impl.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib/libqmi_wms_client_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_wms_client_helper.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib/vendor.lge.hardware.property@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.lge.hardware.property@2.0.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib/vendor.lge.hardware.soi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.lge.hardware.soi@1.0.so \
     vendor/lge/joan-common/proprietary/vendor/lib/lib-sec-disp.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-sec-disp.so \
     vendor/lge/joan-common/proprietary/vendor/lib/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlacSwDec.so \
     vendor/lge/joan-common/proprietary/vendor/lib/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libApeSwDec.so \
@@ -813,6 +875,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/joan-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.iop@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.iop@1.0-impl.so \
     vendor/lge/joan-common/proprietary/vendor/lib64/hw/vr.joan.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vr.joan.so \
     vendor/lge/joan-common/proprietary/vendor/lib64/hw/vulkan.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.msm8998.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib64/hw/vendor.lge.hardware.property@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.lge.hardware.property@2.0-impl.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib64/hw/vendor.lge.hardware.soi@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.lge.hardware.soi@1.0-impl.so \
     vendor/lge/joan-common/proprietary/vendor/lib64/lib-sec-disp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-sec-disp.so \
     vendor/lge/joan-common/proprietary/vendor/lib64/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAlacSwDec.so \
     vendor/lge/joan-common/proprietary/vendor/lib64/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libApeSwDec.so \
@@ -1007,6 +1071,17 @@ PRODUCT_COPY_FILES += \
     vendor/lge/joan-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so \
     vendor/lge/joan-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so \
     vendor/lge/joan-common/proprietary/vendor/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.voiceprint@1.0.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib64/lib-imscmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imscmservice.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib64/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsdpl.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib64/lib-imsqimf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsqimf.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib64/lib-imsrcs-v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsrcs-v2.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib64/lib-imsrcsbaseimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsrcsbaseimpl.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib64/lib-imsvtcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsvtcore.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib64/lib-imsxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsxml.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib64/liblgesoi-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblgesoi-impl.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib64/libqmi_wms_client_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_wms_client_helper.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib64/vendor.lge.hardware.property@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.lge.hardware.property@2.0.so \
+    vendor/lge/sm8150-common/proprietary/vendor/lib64/vendor.lge.hardware.soi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.lge.hardware.soi@1.0.so \
     vendor/lge/joan-common/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db
 
 PRODUCT_PACKAGES += \
@@ -1028,12 +1103,15 @@ PRODUCT_PACKAGES += \
     libtime_genoff \
     libloc_api_v02 \
     QtiTelephonyService \
+    GBAService \
     WfdService \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentTGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON \
+    LGIms \
     qcrilmsgtunnel \
     SVIService \
     TimeService \
     WfdCommon \
+    lg-framework \
     ReferenceFeature
